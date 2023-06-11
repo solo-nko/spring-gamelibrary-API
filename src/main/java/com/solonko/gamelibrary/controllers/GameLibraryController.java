@@ -12,6 +12,9 @@ import com.solonko.gamelibrary.entities.Purchase;
 import com.solonko.gamelibrary.repositories.GameRepository;
 import com.solonko.gamelibrary.repositories.PurchaseRepository;
 
+/* STATUS
+ * The API responds to GET and POST requests, and properly generates Ids, at least for the Game objects. Currently it seems to be using an in-memory database though, meaning that all data is lost when the server is shut down. Need to figure out how to make it permanently stored, or non-volatile.
+ */
 @RestController
 @CrossOrigin
 @RequestMapping
