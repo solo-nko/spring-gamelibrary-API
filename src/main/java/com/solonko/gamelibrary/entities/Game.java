@@ -7,8 +7,11 @@ import jakarta.persistence.Id;
 @Entity
 public class Game {
 	@Id
-	@GeneratedValue
+	@GeneratedValue()
 	private Long id;
+	public Long getId() {
+		return id;
+	}
 
 	private String title;
 	public String getTitle() {

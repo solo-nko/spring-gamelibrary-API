@@ -34,6 +34,12 @@ public class GameLibraryController {
 		return this.gameRepository.findAll();
 	}
 
+	@PostMapping("/games")
+	public Game addGame(@RequestBody Game inputGame) {
+		Game addedGame = this.gameRepository.save(inputGame);
+		return addedGame;		
+	}
+
 	@PostMapping("/purchases")
 	public Purchase addPurchase(@RequestBody Purchase inputPurchase) {
 		Purchase addedPurchase = this.purchaseRepository.save(inputPurchase);
