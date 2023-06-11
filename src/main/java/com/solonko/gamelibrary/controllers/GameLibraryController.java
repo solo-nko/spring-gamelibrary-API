@@ -1,4 +1,4 @@
-package com.solonko.gamelibrary.controller;
+package com.solonko.gamelibrary.controllers;
 
 public class GameLibraryController {
 	

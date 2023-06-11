@@ -1,10 +1,10 @@
-package com.solonko.gamelibrary.repository;
-
-import com.solonko.gamelibrary.model.Purchase;
+package com.solonko.gamelibrary.repositories;
 
 import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
+
+import com.solonko.gamelibrary.entities.Purchase;
 
 public interface PurchaseRepository extends CrudRepository<Purchase, Long> {
 	

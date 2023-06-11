@@ -1,8 +1,16 @@
-package com.solonko.gamelibrary.model;
+package com.solonko.gamelibrary.entities;
 
 import java.util.Date;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
+@Entity
 public class Purchase extends Game {
+
+	@Id
+	@GeneratedValue
+	private Long id;
 
 	private String storefront;
 	public String getStorefront() {
